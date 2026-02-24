@@ -19,7 +19,7 @@ pipeline {
         }
 
         stage('JaCoCo Report') {
-            steps 
+            steps {
                 jacoco(
                     execPattern: '**/target/jacoco.exec',
                     classPattern: '**/target/classes',
@@ -35,4 +35,4 @@ pipeline {
             }
         }
     }
-}
+} 
