@@ -16,7 +16,7 @@ pipeline {
 
         stage('Build & Test with Coverage') {
             steps {
-                sh 'mvn clean test'
+                sh 'mvn clean package -DskipTests=false'
             }
         }
 
